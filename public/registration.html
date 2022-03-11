@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="js/index.js"></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <style>
+      .card-registration .select-input.form-control[readonly]:not([disabled]) {
+        font-size: 1rem;
+        line-height: 2.15;
+        padding-left: .75em;
+        padding-right: .75em;
+      }
+      .card-registration .select-arrow {
+        top: 13px;
+      }
+    </Style>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Find My Room Mate</title>
+  </head>
+
+  <body>
+    <!-- <main role="main">
+      <section>
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-6">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5" style="color: #4835d4;">Account Infromation</h3>
+
+                      
+
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+
+
+                            <form action="/user/register" method="post">
+                              <input type="text" id="fname" name="fname" placeholder="First name"><br>
+                              <input type="text" id="lname" name="lname" placeholder="Last name"><br>
+                              
+                              <label for="birthday">Date of Birth : </label>
+                              <input required type="date" id="birthday" name="birthday" class="form-control"><br>
+                              
+
+                              <select class="custom-select" required name="gender">
+                                <option selected>Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                              </select><br>
+
+                                <input required type="text" name = "uni_email" class="form-control" id="uni_email" placeholder="University Email Address"><br>
+                                <input required type="text" name="uni_name" class="form-control" id="uni_name" placeholder="University Name"><br>
+                                <input required type="text" name="uni_program" class="form-control" id="uni_program" placeholder="University Program Name"><br>
+                                <input required type="password" name = "password" class="form-control" id="password" placeholder="Password"><br><br>
+
+                                <h3 class="fw-normal mb-5">Personal Preferences</h3><br><br>
+
+                                <select class="custom-select" required name="nationality">
+                                  <option selected>Nationality</option>
+                                  <option value="Australian">Australian</option>
+                                  <option value="Chinese">Chinese</option>
+                                  <option value="German">German</option>
+                                  <option value="Indian">Indian</option>
+                                  <option value="Italian">Italian</option>
+                                  <option value="American">American</option>
+                                </select><br>
+
+                                <select class="custom-select" required name="diet_opt">
+                                  <option selected>Dietary Options</option>
+                                  <option value="Vegetarian">Vegetarian</option>
+                                  <option value="Vegan">Vegan</option>
+                                  <option value="Non Vegetarian">Non Vegetarian</option>
+                                  <option value="Gluten-free diet">Gluten-free diet</option>
+                                  <option value="Mediterranean diet">Mediterranean diet</option>
+                                  <option value="Paleo diet">Paleo diet</option>
+                                </select><br>
+
+                                <input required type="text" name = "language" class="form-control" id="formGroupExampleInput" placeholder="Language spoke"><br>
+                              
+                                <select class="custom-select" name="sharing_opt" required>
+                                  <option selected>Shared occupancy Preferences?</option>
+                                  <option value="Single Bed">Single Bed</option>
+                                  <option value="Double Bed">Double Bed</option>
+                                  <option value="2+ Beds">2+ Beds</option>
+                                </select><br>
+
+                                <select class="custom-select" name="pets_opt" required>
+                                  <option selected>Pet Preferences</option>
+                                  <option value="Comfortable with pets">Comfortable with pets</option>
+                                  <option value="Do not want pets">Do not want pets</option>
+                                </select><br>
+
+                                <select class="custom-select" name="smoking_habit" required>
+                                  <option selected>Smoking habits</option>
+                                  <option value="Socially">Socially</option>
+                                  <option value="Occasionally">Occasionally</option>
+                                  <option value="Regularly">Regularly</option>
+                                  <option value="Don't Smoke">Don't Smoke</option>
+                                </select><br>
+
+                                <select class="custom-select" name="drinking_habit" required>
+                                  <option selected>Drinking habits</option>
+                                  <option value="Socially">Socially</option>
+                                  <option value="Occasionally">Occasionally</option>
+                                  <option value="Regularly">Regularly</option>
+                                  <option value="Don't drink">Don't drink</option>
+                                </select><br>
+
+                                <input
+                                  class="form-check-input me-3"
+                                  type="checkbox"
+                                  value=""
+                                  id="form2Example3c"
+                                  required
+                                />
+                                <label class="form-check-label text-white" for="form2Example3" required>
+                                I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your site.
+                                </label><br>
+
+                              <input type="submit" value="Register"><br>
+                            </form>  
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+          &copy; 2017-2018 Company, Inc. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main> -->
+    <section class="h-100 bg-dark">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                    alt="Sample photo"
+                    class="img-fluid"
+                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"
+                  />
+                </div>
+                <form action="/user/register" method="post">
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">Student registration form</h3>
+    
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1m" class="form-control form-control-lg" name="fname" required/>
+                          <label class="form-label" for="form3Example1m">First name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1n" class="form-control form-control-lg" name="lname" required/>
+                          <label class="form-label" for="form3Example1n">Last name</label>
+                        </div>
+                      </div>
+                    </div>
+  
+                    <div class="form-outline mb-4">
+                      <input type="date" id="form3Example8" name="birthday" class="form-control form-control-lg" required/>
+                      <label class="form-label" for="form3Example8">Date of Birth</label>
+                    </div>
+
+                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+    
+                      <h6 class="mb-0 me-4">Gender: </h6>
+    
+                      <select class="custom-select" required name="gender">
+                        <option selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
+    
+                    </div>  <br/>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example8" class="form-control form-control-lg" required/>
+                      <label class="form-label" for="form3Example8">University</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example8" class="form-control form-control-lg" name="uni_program" required/>
+                      <label class="form-label" for="form3Example8">Program</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="text" name = "uni_email" id="form3Example97" class="form-control form-control-lg"required />
+                      <label class="form-label" for="form3Example97">University Email Id</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="password" name = "password" id="form3Example97" class="form-control form-control-lg"required />
+                      <label class="form-label" for="form3Example97">Password</label>
+                    </div>
+
+                    <h3 class="fw-normal mb-5">Personal Preferences</h3>
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" required name="nationality">
+                        <option selected>Nationality</option>
+                        <option value="Australian">Australian</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="German">German</option>
+                        <option value="Indian">Indian</option>
+                        <option value="Italian">Italian</option>
+                        <option value="American">American</option>
+                      </select><br>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" required name="diet_opt">
+                        <option selected>Dietary Options</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Non Vegetarian">Non Vegetarian</option>
+                        <option value="Gluten-free diet">Gluten-free diet</option>
+                        <option value="Mediterranean diet">Mediterranean diet</option>
+                        <option value="Paleo diet">Paleo diet</option>
+                      </select><br>
+                    </div>
+                    <input required type="text" name = "language" class="form-control" id="formGroupExampleInput" placeholder="Languages known"><br>
+                    
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="sharing_opt" required>
+                        <option selected>Shared occupancy Preferences?</option>
+                        <option value="Single Bed">Single Bed</option>
+                        <option value="Double Bed">Double Bed</option>
+                        <option value="2+ Beds">2+ Beds</option>
+                      </select><br>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="pets_opt" required>
+                        <option selected>Pet Preferences</option>
+                        <option value="Comfortable with pets">Comfortable with pets</option>
+                        <option value="Do not want pets">Do not want pets</option>
+                      </select><br>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="smoking_habit" required>
+                        <option selected>Smoking habits</option>
+                        <option value="Socially">Socially</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Regularly">Regularly</option>
+                        <option value="Don't Smoke">Don't Smoke</option>
+                      </select><br>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <select class="form-control" id="exampleFormControlSelect1" name="drinking_habit" required>
+                        <option selected>Drinking habits</option>
+                        <option value="Socially">Socially</option>
+                        <option value="Occasionally">Occasionally</option>
+                        <option value="Regularly">Regularly</option>
+                        <option value="Don't drink">Don't drink</option>
+                      </select><br>
+  
+                    </div>
+                    <div class="d-flex justify-content-end pt-3">
+                      <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                      <button type="submit" class="btn btn-warning btn-lg ms-2" value="Register">Register</button>
+                    </div>
+                  </div>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
